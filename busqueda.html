@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adebol</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="header d-none d-lg-block" id="navigation">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/home/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="login">
+                            <div class="row no-gutters">
+                                <div class="col-lg-8 col-sm-12">
+                                    <span>SI ERES ASOCIADO (A) </span>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                    <a href="#" class="button secondary round">INICIAR SESIÓN</a>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <ul class="navbar-nav">                           
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Acerca de nosotros
+                                    </a>
+                                    <ul class="dropdown-menu mt-0 w-100" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <ul>
+                                                <li><a class="dropdown-item" href="quienes.html">Quiénes somos</a></li>
+                                                <li><a class="dropdown-item" href="estructura.html">Estructura organizacional</a></li>
+                                            </ul>
+                                        </li>   
+                                        <li>
+                                            <ul>
+                                                <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                                            </ul>
+                                        </li>                                   
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="asociese.html" id="navbarDropdown">
+                                        Asociese
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="ahorros.html" id="navbarDropdown">
+                                        Ahorros
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="creditos.html" id="navbarDropdown">
+                                        Créditos
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link enlinea" href="beneficios.html" id="navbarDropdown">
+                                        Beneficios
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link enlinea" href="formatos.html" id="navbarDropdown">
+                                        Instructivos
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="contacto.html" id="navbarDropdown">
+                                        Contáctenos
+                                    </a>                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn " type="submit"><img src="img/home/search.png" alt="buscar"></button>
+                            </form>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="header-mobile header d-lg-none" id="navigation-mobile">
+        <header >
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/home/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>                                                    
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="otros">
+                
+            </div>
+            <div id="main"> 
+                <span onclick="openSearch()" class="buscar">
+                    <a href="#">
+                        <img src="img/home/menu-buscar-mobile.svg" alt="" id="buscar">
+                        <p>BUSCAR</p>
+                    </a>            
+                </span>               
+                <span class="afiliados">
+                    <a href="#">
+                        <img src="img/home/menu-acceso-afiliado-mobile.svg" alt="" id="afiliados">
+                        <p>ACCESO <br> AFILIADOS</p>
+                    </a>
+                </span>
+                <span onclick="openNav()" class="menu">
+                    <img src="img/home/menu-hamburguesa-mobile.svg" alt="menu" id="menu">
+                    <p>MENÚ</p>
+                </span>
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/home/close.png" alt="cerrar"> <br> Cerrar</a>
+            <a class="dropdown-btn">
+                Acerca de nosotros                
+            </a>
+            <div class="dropdown-container">
+                <a href="quienes.html">Quiénes somos</a>
+                <a href="historia.html">Historia</a>
+                <a href="estructura.html">Estructura organizacional</a>
+            </div> 
+            <a  href="asociese.html">
+                Asociese               
+            </a>              
+            <a  href="ahorros.html">
+                Ahorros               
+            </a>             
+            <a  href="creditos.html">
+                Créditos                
+            </a>            
+            <a  href="beneficios.html">
+                Beneficios            
+            </a> 
+            <a  href="formatos.html">
+                Instructivos           
+            </a>             
+            <a  href="contacto.html">
+                Contáctenos                
+            </a>                                         
+        </div>
+    </div>
+
+    <div class="separador-nav"></div>
+
+    <section>
+        <div class="container">
+            <div class="miga">
+                <a href="/" class="home">Inicio</a><span>/</span><a href="#" class="actual">Buscador</a>
+            </div>            
+        </div>
+    </section>  
+
+    
+
+    <section class="container grisclaro">
+        <div class="bck-form-busqueda ancho-completo ">
+            <h1 class="tit-verde">Resultado de la búsqueda:</h1>
+            <form class="lado ancho-completo dos-bajo" action="">
+                <input id="inputSearch" class="ancho-completo  deco-busqueda" type="text" name="buscar" placeholder="Escriba para buscar" />
+                <a  class="deco-busqueda btn-busqueda txt-verde" href="">Buscar</a>
+            </form>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="resultado-busq">
+
+            <div id="box-searchb">
+                <div class="lista-buscarb">
+                <ul>
+                    <li>
+                        <a href="Blog.html">
+                            <h6>Blog</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="asociese.html">
+                            <h6>Asociese</h6>
+                            <p>Pueden ser asociados de Adebol los funcionarios que cuenten con contrato directo con alguna de las compañías que se encuentran vinculadas con el Fondo...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ahorros.html">
+                            <h6>Ahorro</h6>
+                            <p>Los asociados del fondo tendrán una cuota de ahorro mensual mínima de $40.000 y máxima del 10 % del salario básico mensual...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="historia.html">
+                            <h6>Historia</h6>
+                            <p>Adebol nació en el año de 1951, por una calamidad que se le presentó a un modesto trabajador del área administrativa...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="creditos.html">
+                            <h6>Creditos</h6>
+                            <p>Para que los asociados puedan desarrollar sus proyectos personales y familiares, Adebol cuenta con las siguientes líneas de crédito...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="beneficios.html">
+                            <h6>Beneficios</h6>
+                            <p>El objetivo es cubrir la vida del asociado para que ante un evento catastrófico, sus beneficiarios cuenten con una indemnización de $25 millones...</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quienes.html">
+                            <h6>Quiénes Somos</h6>
+                            <p>El fondo de empleados es una empresa asociativa de economía solidaria, eficiente, sin ánimo de lucro, de derecho privado...</p>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <div class="separador"></div>
+    
+
+    <section class="ayuda">
+        <div class="container">
+            <div class="mensaje-ayuda">
+                <img src="img/home/icon_FORMULARIO.svg" alt="">
+                <span>Para resolver todas sus dudas</span>
+                <a href="contacto.html" class="button primary outline round">CONTÁCTENOS AQUÍ</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="uno">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logos-footer">
+                            <img src="img/home/vigilado.png" alt="" class="vigilado">
+                            <img src="img/home/ADEBOL-LOGO_B.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4>HORARIO DE ATENCIÓN</h4>
+                        <p>Lunes a viernes</p>
+                        <p>Horario continuo 8:00 a.m - 5:00 p.m</p>
+                        <p>Carrera 10 No. 28 - 49 Torre A - Piso 4</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4>CONTÁCTENOS</h4>
+                        <p>Comuníquese con nosotros,  marcando al <br> 3419520, 3419522, 3419540<br>
+                            <a href="#" class="yellow">WhatsApp: +57 322 3981806</a> <br>
+                            email: <a href="mailto:adebol@segurosbolivar.com">adebol@segurosbolivar.com</a> <br>
+                        </p>                    
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div> 
+            </div>
+        </div>
+        <div class="dos">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Términos y condiciones de uso</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="faq.html">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tres">
+            <div class="container">
+                <ul>
+                    <li>© 2021 - Adebol</li>
+                    <li>Todos los derechos reservados</li>                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+      
+    <script src="js/buscadordos.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

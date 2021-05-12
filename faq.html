@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adebol</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="header d-none d-lg-block" id="navigation">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/home/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="login">
+                            <div class="row no-gutters">
+                                <div class="col-lg-8 col-sm-12">
+                                    <span>SI ERES ASOCIADO (A) </span>
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
+                                    <a href="#" class="button secondary round">INICIAR SESIÓN</a>
+                                </div>
+                            </div>                                                
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <ul class="navbar-nav">                           
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Acerca de nosotros
+                                    </a>
+                                    <ul class="dropdown-menu mt-0 w-100" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <ul>
+                                                <li><a class="dropdown-item" href="quienes.html">Quiénes somos</a></li>
+                                                <li><a class="dropdown-item" href="estructura.html">Estructura organizacional</a></li>
+                                            </ul>
+                                        </li>   
+                                        <li>
+                                            <ul>
+                                                <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+                                            </ul>
+                                        </li>                                   
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="asociese.html" id="navbarDropdown">
+                                        Asociese
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="ahorros.html" id="navbarDropdown">
+                                        Ahorros
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="creditos.html" id="navbarDropdown">
+                                        Créditos
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link enlinea" href="beneficios.html" id="navbarDropdown">
+                                        Beneficios
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link enlinea" href="formatos.html" id="navbarDropdown">
+                                        Instructivos
+                                    </a>                                    
+                                </li>
+                                <li class="nav-item dropdown position-static">
+                                    <a class="nav-link " href="contacto.html" id="navbarDropdown">
+                                        Contáctenos
+                                    </a>                                    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn " type="submit"><img src="img/home/search.png" alt="buscar"></button>
+                            </form>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="header-mobile header d-lg-none" id="navigation-mobile">
+        <header >
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/home/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>                                                    
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="otros">
+                
+            </div>
+            <div id="main"> 
+                <span onclick="openSearch()" class="buscar">
+                    <a href="#">
+                        <img src="img/home/menu-buscar-mobile.svg" alt="" id="buscar">
+                        <p>BUSCAR</p>
+                    </a>            
+                </span>               
+                <span class="afiliados">
+                    <a href="#">
+                        <img src="img/home/menu-acceso-afiliado-mobile.svg" alt="" id="afiliados">
+                        <p>ACCESO <br> AFILIADOS</p>
+                    </a>
+                </span>
+                <span onclick="openNav()" class="menu">
+                    <img src="img/home/menu-hamburguesa-mobile.svg" alt="menu" id="menu">
+                    <p>MENÚ</p>
+                </span>
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/home/close.png" alt="cerrar"> <br> Cerrar</a>
+            <a class="dropdown-btn">
+                Acerca de nosotros                
+            </a>
+            <div class="dropdown-container">
+                <a href="quienes.html">Quiénes somos</a>
+                <a href="historia.html">Historia</a>
+                <a href="estructura.html">Estructura organizacional</a>
+            </div> 
+            <a  href="asociese.html">
+                Asociese               
+            </a>              
+            <a  href="ahorros.html">
+                Ahorros               
+            </a>             
+            <a  href="creditos.html">
+                Créditos                
+            </a>            
+            <a  href="beneficios.html">
+                Beneficios            
+            </a> 
+            <a  href="formatos.html">
+                Instructivos           
+            </a>             
+            <a  href="contacto.html">
+                Contáctenos                
+            </a>                                         
+        </div>
+    </div>
+
+    <div class="separador-nav"></div>
+
+    <section>
+        <div class="container">
+            <div class="miga">
+                <a href="/" class="home">Inicio</a><span>/</span><a href="#" class="actual">Preguntas frecuentes</a>
+            </div>            
+        </div>
+    </section>
+
+    <section class="banner-simple">
+        <div class="container cero-padd">
+            <img src="img/internas/banner_preguntas-frecuentes_small.png" alt="" class="cut ubica-img-faq">
+            <div class="content-lead">
+                <div  class="lead-banner-principal">
+                    <div  class="text-lead">
+                        <p>Encuentre respuestas a sus preguntas</p>                        
+                    </div>
+                </div>                
+            </div>            
+        </div>
+    </section>
+
+    <section class="preguntas blanco faq">
+        <div class="container">
+            <div class="titw-ico">
+                <div class="row">
+                    <div class="col-lg-1 offset-lg-1 col-2">
+                        <img src="img/internas/pregunta-frecuente.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-10">
+                        Algunas sugerencias 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">                    
+                    <div class="accordion accordion-flush home" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                VINCULACIONES
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="accordionFlush2">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
+                                            1. ¿Quiénes pueden ser asociados del Fondo?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2" data-bs-parent="#accordionFlush2">
+                                        <div class="accordion-body">
+                                            Funcionarios que cuenten con contrato directo con algunas de las compañías que se encuentran vinculadas con el Fondo. Estas son las
+                                            <a href="asociese.html">empresas asociadas</a>
+                                            <small>Publicado 21/09/2020 - 8:57am  &nbsp; |  &nbsp;  Actualizado 21/01/2021 - 8:50am </small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
+                                            2. ¿Qué pasos debo seguir para vincularme con Adebol?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo2" data-bs-parent="#accordionFlush2">
+                                        <div class="accordion-body">
+                                            <ol>
+                                                <li>
+                                                    Contáctanos al correo electrónico <a href="mailto:adebol@segurosbolivar.com">adebol@segurosbolivar.com</a> o al <a href="">WhatsApp 322 3981806 </a>
+                                                </li>
+                                                <li>
+                                                    Contesta una pregunta
+                                                </li>
+                                                <li>
+                                                    Firma electrónicamente el formulario de vinculación, el cual enviaremos por correo electrónico.
+                                                </li>
+                                            </ol>
+                                            <small>
+                                                Publicado 21/09/2020 - 8:57am   &nbsp; |  &nbsp; Actualizado 21/01/2021 - 8:50am 
+                                            </small>
+                                        </div>
+                                      </div>
+                                    </div>                        
+                                </div>                                
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                AHORROS
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+
+                                <div class="accordion accordion-flush" id="accordionFlush3">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne3">
+                                            1. ¿Cuánto puedo ahorrar?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne3" data-bs-parent="#accordionFlush3">
+                                        <div class="accordion-body">
+                                            Mínimo $40.000 mensuales, máximo el 10% del salario básico mensual.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo3" aria-expanded="false" aria-controls="flush-collapseTwo3">
+                                            2.	¿Cuál es la tasa de rendimiento para los ahorros?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo3" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo3" data-bs-parent="#accordionFlush3">
+                                        <div class="accordion-body">
+                                            La tasa de interés para rendimientos es definida semestralmente por la Junta Directiva, basada en los resultados del Fondo.  
+                                        </div>
+                                      </div>
+                                    </div>   
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo2">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo4" aria-expanded="false" aria-controls="flush-collapseTwo4">
+                                                3.	¿Tiene algún costo el vincularme al Fondo?
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo4" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo4" data-bs-parent="#accordionFlush3">
+                                            <div class="accordion-body">
+                                                Ninguno
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo3">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo5" aria-expanded="false" aria-controls="flush-collapseTwo5">
+                                                4.	¿Qué es el Ahorro Permanente?
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo5" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo5" data-bs-parent="#accordionFlush3">
+                                            <div class="accordion-body">
+                                                El Ahorro Permanente es el ahorro que efectúa el asociado en forma periódica y obligatoria con el propósito de hacer un capital.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo4">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo6" aria-expanded="false" aria-controls="flush-collapseTwo6">
+                                                5.	¿Qué es el ahorro programado?
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo6" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo6" data-bs-parent="#accordionFlush3">
+                                            <div class="accordion-body">
+                                                El Ahorro Programado, es un ahorro contractual, y lo constituyen los depósitos que el asociado acuerda ahorrar periódicamente.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo5">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo7" aria-expanded="false" aria-controls="flush-collapseTwo7">
+                                                6.	¿Puedo retirar mis ahorros en cualquier momento?
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo7" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo7" data-bs-parent="#accordionFlush3">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li>
+                                                        Los ahorros permanentes se pueden retirar cuando el valor de la deuda es inferior a los mismos.
+                                                    </li>
+                                                    <li>
+                                                        Los ahorros programados se pueden retirar en cualquier momento. 
+                                                    </li>
+                                                    <li>
+                                                        El aporte social solo se entrega cuando el asociado se retira del Fondo.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>  
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    CRÉDITOS
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    <div class="accordion accordion-flush" id="accordionFlush4">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc1" aria-expanded="false" aria-controls="acc1">
+                                                    1.	¿Qué requisitos debo cumplir para solicitar un crédito?
+                                                </button>
+                                            </h2>
+                                            <div id="acc1" class="accordion-collapse collapse" aria-labelledby="acc1" data-bs-parent="#accordionFlush4">
+                                                <div class="accordion-body">
+                                                    Cumplir el tiempo mínimo como asociado, para cada una de las líneas de crédito. 
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2" aria-expanded="false" aria-controls="acc2">
+                                                    2.	¿Cómo puedo saber mi cupo de crédito?
+                                                </button>
+                                            </h2>
+                                            <div id="acc2" class="accordion-collapse collapse" aria-labelledby="acc2" data-bs-parent="#accordionFlush4">
+                                                <div class="accordion-body">
+                                                    El cupo de crédito depende de los siguientes criterios
+                                                    <ul>
+                                                        <li>
+                                                            Monto de los ahorros 
+                                                        </li>
+                                                        <li>
+                                                            Capacidad de descuento por nómina
+                                                        </li>
+                                                        <li>
+                                                            Reporte en centrales de riesgo - Nivel de endeudamiento.
+                                                        </li>
+                                                        <li>
+                                                            Reporte en centrales de riesgo - Nivel de endeudamiento.
+                                                        </li>
+                                                        <li>
+                                                            Antigüedad en el Fondo y la Compañía.
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                                               
+                                    </div> 
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    BENEFICIOS
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    <div class="accordion accordion-flush" id="accordionFlush4">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc1" aria-expanded="false" aria-controls="acc1">
+                                                    1.	¿Cuáles son los principales beneficios del Fondo?
+                                                </button>
+                                            </h2>
+                                            <div id="acc1" class="accordion-collapse collapse" aria-labelledby="acc1" data-bs-parent="#accordionFlush4">
+                                                <div class="accordion-body">
+                                                    Póliza de vida, póliza Exequial, becas para postgrado, auxilio funerario, convenios con proveedores para descuentos.  
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2" aria-expanded="false" aria-controls="acc2">
+                                                    2.	¿Con qué proveedores cuenta el Fondo? 
+                                                </button>
+                                            </h2>
+                                            <div id="acc2" class="accordion-collapse collapse" aria-labelledby="acc2" data-bs-parent="#accordionFlush4">
+                                                <div class="accordion-body">
+                                                    Para temas de salud, vacaciones, tecnología, hogar, entretenimiento y grandes superficies.
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                                               
+                                    </div> 
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ayuda">
+        <div class="container">
+            <div class="mensaje-ayuda">
+                <img src="img/home/icon_FORMULARIO.svg" alt="">
+                <span>Para resolver todas sus dudas</span>
+                <a href="contacto.html" class="button primary outline round">CONTÁCTENOS AQUÍ</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="uno">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logos-footer">
+                            <img src="img/home/vigilado.png" alt="" class="vigilado">
+                            <img src="img/home/ADEBOL-LOGO_B.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4>HORARIO DE ATENCIÓN</h4>
+                        <p>Lunes a viernes</p>
+                        <p>Horario continuo 8:00 a.m - 5:00 p.m</p>
+                        <p>Carrera 10 No. 28 - 49 Torre A - Piso 4</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <h4>CONTÁCTENOS</h4>
+                        <p>Comuníquese con nosotros,  marcando al <br> 3419520, 3419522, 3419540<br>
+                            <a href="#" class="yellow">WhatsApp: +57 322 3981806</a> <br>
+                            email: <a href="mailto:adebol@segurosbolivar.com">adebol@segurosbolivar.com</a> <br>
+                        </p>                    
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div> 
+            </div>
+        </div>
+        <div class="dos">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Términos y condiciones de uso</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="faq.html">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tres">
+            <div class="container">
+                <ul>
+                    <li>© 2021 - Adebol</li>
+                    <li>Todos los derechos reservados</li>                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+      
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
