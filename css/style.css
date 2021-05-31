@@ -510,7 +510,7 @@ nav form input{
 .slider-main .content-lead{
     display: block;
     position: relative;
-    margin-top: 170px;
+    margin-top: 100px;
 }
 .slider-main .content-lead .desc{
     font-family: 'Roboto Cn';
@@ -848,7 +848,7 @@ section.blog{
     display: block;
     text-align: left;
     color: #016D38;
-    margin: 1em 0;
+    margin: 0.6em 0;
 }
 .card-blog .txt-blog p{
     font-family:'Roboto Cn';
@@ -956,19 +956,25 @@ section.blog{
 .blog .slider-main{
     position: relative;
     max-height: 495px;   
-    margin-top: 0; 
+    max-width: 762px;
+    margin: 0 auto 30px;
+    height: fit-content;
 }
 .blog .slider-main img{
+    position: relative;
+    width: auto;
+}
+.blog .slider-main .slide-blog{
+    position: relative;
+    max-height: 390px;
+}
+.blog .slider-main .slide-blog .container{
     position: absolute;
-    top: 0;
-    filter:brightness(0.6);
-    background-repeat:no-repeat;
-    background-position:center center !important;
+    top: 100px;
 }
 .blog .slider-main .content-lead{
     display: block;
-    position: relative;
-    margin-top: 170px;
+    position: relative;    
 }
 .blog .slider-main .content-lead .desc{
     font-family: 'Roboto Cn';
@@ -981,6 +987,8 @@ section.blog{
 }
 .blog .lead-banner-principal{
     margin-left: 0;
+    left: 50%;    
+    transform: translate(-50%, -50%);
 }
 .blog .text-lead{
     margin: 0 auto;
@@ -995,8 +1003,8 @@ section.blog{
     position: relative;
     box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
     width: 100%;
-    max-width: 450px;
-    min-height: 560px;
+    max-width: 370px;
+    min-height: 480px;
 }
 .blog .card-blog .txt-blog p{
     color: #686868;
@@ -2337,12 +2345,16 @@ label.error{
     }
     .formlat{
         margin: 0;
-    }
+    }    
 }
 @media (min-width:576px){
     #main span{
         width: 10%;
     }
+    .blog .slider-main .slide-blog .container{
+        top: 0;
+    }
+        
 }
 @media (min-width:768px){
     .quote{
@@ -2395,6 +2407,9 @@ label.error{
     }
     .ubica-img-ahorros{
         object-position: 50% 20% !important;
+    }
+    .blog .slider-main .slide-blog .container{
+        top: 0;
     }
 }
 @media (min-width:991px){
@@ -2465,6 +2480,9 @@ label.error{
     }
     .add-doc-flecha{
         display: none;
+    }
+    .blog .slider-main .slide-blog .container{
+        top: 100px;
     }
 }
 
@@ -2537,9 +2555,9 @@ label.error{
     .servicios.left,.card-blog.left {        
         margin: 0 auto 30px;
     }
-    /*.servicios.right,.card-blog.right {        
-        margin: 30px auto 30px;
-    }*/
+    .servicios.right,.card-blog.right {        
+        margin: 0 auto 30px;
+    }
     .add-doc.left {
         margin: 0 auto 20px;
     }
@@ -2579,6 +2597,12 @@ label.error{
     .sidenav a.activo {
         color: #016d38 !important;
         text-decoration: underline;
+    }
+    .blog .post-box {        
+        margin-bottom: 5em;
+    }
+    .dos-alto {
+        margin-top: 1em !important;
     }
 }
 
@@ -2756,6 +2780,25 @@ label.error{
         background-repeat: no-repeat;
         background-position: right;
     }
+    .blog .slider-main img {
+        width: 100%;        
+    }
+    .blog .slider-main {
+        height: fit-content;
+    }
+    .slider-main .content-lead {
+        display: block;
+        position: relative;
+        margin-top: 100px;
+    }
+    .slider-main .content-lead .text-lead {        
+        padding: 1rem;        
+    }
+}
+@media (max-width: 576px){
+    .slider-main .content-lead {        
+        margin-top: 0;
+    }
 }
 @media (max-width: 480px){
     body{
@@ -2822,6 +2865,15 @@ label.error{
     .banner-simple .content-lead {
         position: absolute;
         top: 25%;
+    }
+    .slider-main .content-lead {
+        display: block;
+        position: relative;
+        margin-top: -15px;
+    }
+    .blog .slider-main img {
+        width: 100%;
+        height: fit-content;
     }
 }
 @media (max-width: 410px){
