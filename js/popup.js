@@ -1,30 +1,54 @@
-fndpop = document.getElementById("fnd-pop")
-openma = document.getElementById("open-modala");
-openmb = document.getElementById("open-modalb");
-openmc = document.getElementById("open-modalc");
-openmd = document.getElementById("open-modald");
-openme = document.getElementById("open-modale");
-openmf = document.getElementById("open-modalf");
-btncerrar = document.getElementById("btn-cerrar");
+function openModal(popUpOpen){
+    switch (popUpOpen) {
+        case 1:
+            pop1.style.display = "flex";
+        break;
+        case 2:
+            pop1.style.display = "flex";
+        break;
+        case 3:
+            pop3.style.display = "flex";
+        break;
+        case 4:
+            pop4.style.display = "flex";
+        break;
+        case 5:
+            pop5.style.display = "flex";
+        break;
+        case 6:
+            pop6.style.display = "flex";
+        break;
+                            
+        default:
+          
+          
+    }
 
-
-openma.addEventListener("click", abrir);
-btncerrar.addEventListener("click", cerrar);
-
-openmb.addEventListener("click", abrir);
-openmc.addEventListener("click", abrir);
-openmd.addEventListener("click", abrir);
-openme.addEventListener("click", abrir);
-openmf.addEventListener("click", abrir);
-
-
-
-function abrir() {
-   fndpop.style.display = "flex";
 }
-
-function cerrar() {
-    fndpop.style.display = "none";
+function closeModal(popUpClose){
+    switch (popUpClose) {
+        case 1:
+            pop1.style.display = "none";
+        break;
+        case 2:
+            pop2.style.display = "none";
+        break;
+        case 3:
+            pop3.style.display = "none";
+        break;
+        case 4:
+            pop4.style.display = "none";
+        break;
+        case 5:
+            pop5.style.display = "none";
+        break;
+        case 6:
+            pop6.style.display = "none";
+        break;
+                                    
+        default:          
+          
+    }
 }
 
 

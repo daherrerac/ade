@@ -218,7 +218,7 @@
                             </p>
                         </a>
                     </div>
-                    <a  id="open-modala" class="button primary outline round fullwd" >VER TABLA</a>
+                    <a  id="open-modala" class="button primary outline round fullwd" onclick="openModal(1)" >VER TABLA</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
@@ -236,7 +236,7 @@
                         </a>
                     </div>
                     
-                    <a  id="open-modalb" class="button primary outline round fullwd" >VER TABLA</a>
+                    <a  id="open-modalb" class="button primary outline round fullwd" onclick="openModal(2)">VER TABLA</a>
                     
                 </div>
             </div>
@@ -254,7 +254,7 @@
                             </p>
                         </a>
                     </div>
-                    <a  id="open-modalc" class="button primary outline round fullwd" >VER TABLA</a>
+                    <a  id="open-modalc" class="button primary outline round fullwd" onclick="openModal(3)">VER TABLA</a>
                 </div>
             </div>
         </div>
@@ -276,7 +276,7 @@
                             </p>
                         </a>
                     </div>
-                    <a  id="open-modald" class="button primary outline round fullwd" >VER TABLA</a>
+                    <a  id="open-modald" class="button primary outline round fullwd" onclick="openModal(4)">VER TABLA</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12">
@@ -294,7 +294,7 @@
                         </a>
                     </div>
                     
-                    <a  id="open-modale" class="button primary outline round fullwd" >VER TABLA</a>
+                    <a  id="open-modale" class="button primary outline round fullwd" onclick="openModal(5)">VER TABLA</a>
                     
                 </div>
             </div>
@@ -312,15 +312,50 @@
                             </p>
                         </a>
                     </div>
-                    <a id="open-modalf" class="button primary outline round fullwd" >VER TABLA</a>
+                    <a id="open-modalf" class="button primary outline round fullwd" onclick="openModal(6)">VER TABLA</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="fnd-pop">
+    <div class="fnd-pop" id="pop1" >
         <div class="modal-box">
-            <a id="btn-cerrar">×</a>
+            <a class="btn-cerrar" onclick="closeModal(1)">×</a>
+            <img src="img/internas/tabla-creditos.png" alt="">
+        </div>
+    </div>
+
+    <div class="fnd-pop" id="pop2" >
+        <div class="modal-box">
+            <a class="btn-cerrar" onclick="closeModal(2)">×</a>
+            <img src="img/internas/tabla-creditos.png" alt="">
+        </div>
+    </div>
+
+    <div class="fnd-pop" id="pop3" >
+        <div class="modal-box">
+            <a class="btn-cerrar" onclick="closeModal(3)">×</a>
+            <img src="img/internas/tabla-creditos.png" alt="">
+        </div>
+    </div>
+
+    <div class="fnd-pop" id="pop4" >
+        <div class="modal-box">
+            <a class="btn-cerrar" onclick="closeModal(4)">×</a>
+            <img src="img/internas/tabla-creditos.png" alt="">
+        </div>
+    </div>
+
+    <div class="fnd-pop" id="pop5" >
+        <div class="modal-box">
+            <a class="btn-cerrar" onclick="closeModal(5)">×</a>
+            <img src="img/internas/tabla-creditos.png" alt="">
+        </div>
+    </div>
+
+    <div class="fnd-pop" id="pop6" >
+        <div class="modal-box">
+            <a class="btn-cerrar" onclick="closeModal(6)">×</a>
             <img src="img/internas/tabla-creditos.png" alt="">
         </div>
     </div>
