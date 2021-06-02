@@ -1400,7 +1400,7 @@ footer{
 /* Internas*/
 .banner-simple .container{
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden;    
 }
 .banner-simple img{
     width: 100%;
@@ -2603,6 +2603,11 @@ label.error{
     }
     .dos-alto {
         margin-top: 1em !important;
+    }    
+}
+@media screen and (max-width:991px) {
+    .row.reverse{
+        flex-direction: column-reverse;
     }
 }
 
@@ -2799,6 +2804,19 @@ label.error{
     .slider-main .content-lead {        
         margin-top: 0;
     }
+    .banner-simple .container,
+    .banner-auxiliar .container{
+        padding: 0;  
+    }
+    .separador {
+        height: 20px;        
+    }
+    .benef-card .bajo {
+        height: auto !important;
+    }
+    .formulario .container {        
+        box-shadow: none;
+    }
 }
 @media (max-width: 480px){
     body{
@@ -2862,9 +2880,11 @@ label.error{
         background: transparent;
         margin: 30px 0;
     }
-    .banner-simple .content-lead {
-        position: absolute;
-        top: 25%;
+    .banner-simple .content-lead {        
+        top: 40%;
+    }
+    .banner-simple .contacto .content-lead {        
+        top: 35%;
     }
     .slider-main .content-lead {
         display: block;
@@ -2959,7 +2979,7 @@ a.dropdown-btn.active{
 	border: none;
 	position: absolute;
 	right: 37px;
-	top: 17px;
+	top: 12px;
 }
 .flecha{
     position: relative;
@@ -2970,7 +2990,7 @@ a.dropdown-btn.active{
 	border: none;	
     position: absolute;
 	right: 37px;
-	top: 17px;
+	top: 12px;
 }
 .dropdown-btn.active::after{
     content: url(../img/home/open-menu.png);
