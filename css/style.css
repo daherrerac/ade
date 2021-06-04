@@ -612,6 +612,12 @@ a, a.button:hover, button, button.button:hover {
     text-align: center;
     max-width: max-content;
 }
+.ans a{
+    width: 100%;
+    color: inherit;
+    text-align: left;
+    max-width:100%;
+}
 .button{
     font-family:'Roboto BCn';
     font-size: 1em;
@@ -1398,12 +1404,14 @@ footer{
     padding: 0 10px;
 }
 /* Internas*/
+
 .banner-simple .container{
     position: relative;
     overflow-x: hidden;    
 }
 .banner-simple img{
     width: 100%;
+    max-height: 430px;
 }
 .banner-simple .content-lead{
     position: absolute;
@@ -1937,8 +1945,7 @@ label.error{
 }
 .form-search .form-group button{
     color: #016d38;
-    background: transparent;
-    border-left: 1px solid #016d38;
+    background: transparent;    
     border-right: none;
     border-top: none;
     border-bottom: none;
